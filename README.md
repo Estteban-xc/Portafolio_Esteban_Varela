@@ -31,13 +31,13 @@ portfolio/
 │   └── script.js           ← JavaScript (animaciones, audio, etc.)
 └── assets/
     ├── images/
-    │   ├── foto.jpg        ← Tu foto de perfil (colócala aquí)
+    │   ├── foto.jpg        
     │   └── projects/
     │       ├── erp-novatek.jpg
     │       ├── doomt.jpg
     │       └── strng.jpg
     └── audio/
-        └── presentacion.mp3  ← Tu audio de presentación
+        └── presentacion.mp3  
 ```
   
 ## Ver portafolio
