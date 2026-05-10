@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos — Mauricio Varela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="manga-bg" aria-hidden="true">
+    <div class="speed-lines"></div>
+    <div class="halftone-overlay"></div>
+    <div class="ink-splatter s2"></div>
+    <div class="ink-splatter s3"></div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-mark">⚔</span>
+      <span class="logo-text">MV</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="academico.html">Académico</a></li>
+      <li><a href="proyectos.html" class="active">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-hero-bar">
+      <span class="chapter-num">CAPÍTULO 03</span>
+      <h1 class="page-title">Mis <span class="accent">Proyectos</span></h1>
+      <div class="title-slash"></div>
+    </div>
+
+    <div class="projects-list">
+
+      <!-- PROYECTO 1 -->
+      <article class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-img-wrap">
+          <!-- Reemplaza con: assets/images/projects/erp-novatek.jpg -->
+          <img src="assets/images/projects/erp-novatek.jpg" alt="ERP NovaTek" class="project-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="project-img-placeholder">
+            <span>📁 ERP NovaTek</span>
+            <small>Agrega imagen en assets/images/projects/erp-novatek.jpg</small>
+          </div>
+          <div class="project-img-overlay">
+            <span>ERP NovaTek</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">ERP NovaTek</h2>
+          <p class="project-type">Sistema ERP Modular · Empresas Colombianas</p>
+          <p class="project-desc">
+            Sistema de planificación de recursos empresariales (ERP) modular desarrollado para pequeñas y medianas empresas colombianas. Cada módulo funciona de forma completamente independiente, compuesto por cinco módulos: <strong>Inventario, Recursos Humanos, Ventas y Facturación Electrónica, CRM</strong> y <strong>Contabilidad</strong>. Cumple con normativa colombiana vigente, incluyendo facturación electrónica DIAN.
+          </p>
+          <div class="project-tech">
+            <h3>Tecnologías</h3>
+            <div class="tech-tags">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>SQL Server</span>
+              <span>ADO.NET</span>
+              <span>Visual Studio 2022</span>
+              <span>WPF / WinForms</span>
+              <span>PlantUML</span>
+            </div>
+          </div>
+          <div class="project-arch">
+            <span class="arch-label">Arquitectura:</span>
+            <span class="arch-val">Capas — Presentación / Lógica de Negocio / Acceso a Datos</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="project-card reveal flip">
+        <div class="project-num">02</div>
+        <div class="project-img-wrap">
+          <!-- Reemplaza con: assets/images/projects/doomt.jpg -->
+          <img src="assets/images/projects/doomt.jpg" alt="DOOM'nt" class="project-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="project-img-placeholder">
+            <span>🎮 DOOM'nt</span>
+            <small>Agrega imagen en assets/images/projects/doomt.jpg</small>
+          </div>
+          <div class="project-img-overlay">
+            <span>DOOM'nt</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">DOOM'nt</h2>
+          <p class="project-type">Videojuego FPS · Raycasting 3D</p>
+          <p class="project-desc">
+            Videojuego de disparos en primera persona (FPS) inspirado en el clásico DOOM, desarrollado en Python. El jugador se mueve por un mapa 3D generado con <strong>raycasting</strong> y debe eliminar a todos los enemigos. Incluye tres tipos de enemigos con IA (patrullaje, persecución, ataque), sistema de salud con recuperación automática, efectos de sonido, música de fondo y pantalla de victoria.
+          </p>
+          <div class="project-tech">
+            <h3>Tecnologías</h3>
+            <div class="tech-tags">
+              <span>Python 3</span>
+              <span>Pygame</span>
+              <span>Raycasting</span>
+              <span>BFS / lru_cache</span>
+              <span>PyInstaller</span>
+            </div>
+          </div>
+          <div class="project-arch">
+            <span class="arch-label">Distribución:</span>
+            <span class="arch-val">Ejecutable .exe para Windows vía PyInstaller</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3 -->
+      <article class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-img-wrap">
+          <!-- Reemplaza con: assets/images/projects/strng.jpg -->
+          <img src="assets/images/projects/strng.jpg" alt="STRNG" class="project-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+          <div class="project-img-placeholder">
+            <span>💪 STRNG</span>
+            <small>Agrega imagen en assets/images/projects/strng.jpg</small>
+          </div>
+          <div class="project-img-overlay">
+            <span>STRNG</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">STRNG</h2>
+          <p class="project-type">Sitio Web Estático · Fitness & Salud</p>
+          <p class="project-desc">
+            Sitio web estático sobre entrenamiento físico, nutrición y salud con estética oscura y agresiva tipo gymrat. Siete páginas: hero con partículas animadas, rutinas, alimentación y suplementación, catálogo de implementos, <strong>calculadora de IMC</strong>, contacto. Incluye modo oscuro/claro, menú responsive hamburguesa, ticker animado, música de fondo y video embebido.
+          </p>
+          <div class="project-tech">
+            <h3>Tecnologías</h3>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript Vanilla</span>
+              <span>Google Fonts</span>
+              <span>Canvas API</span>
+            </div>
+          </div>
+          <div class="project-arch">
+            <span class="arch-label">Nota:</span>
+            <span class="arch-val">Sin frameworks externos — 100% HTML, CSS y JS nativo</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mauricio Esteban Varela Cañón — Bogotá, Colombia</p>
+    <p class="footer-sub">Ingeniería de Software · UMB</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

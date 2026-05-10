@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauricio Varela — Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+JP:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- MANGA PANEL OVERLAY -->
+  <div class="manga-bg" aria-hidden="true">
+    <div class="speed-lines"></div>
+    <div class="halftone-overlay"></div>
+    <div class="ink-splatter s1"></div>
+    <div class="ink-splatter s2"></div>
+    <div class="ink-splatter s3"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-mark">⚔</span>
+      <span class="logo-text">MV</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="academico.html">Académico</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="panel-border top-left"></div>
+    <div class="panel-border top-right"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-tag">// Portafolio Profesional</p>
+        <h1 class="hero-name">
+          <span class="name-line line1">MAURICIO</span>
+          <span class="name-line line2">ESTEBAN</span>
+          <span class="name-line line3 accent">VARELA<span class="name-dot">.</span></span>
+        </h1>
+        <p class="hero-title">Ingeniero de Software <span class="bar">|</span> 5to Semestre</p>
+
+        <div class="audio-player" id="audioPlayer">
+          <div class="audio-label">
+            <span class="audio-icon">▶</span>
+            <span>Presentación Personal</span>
+          </div>
+          <div class="audio-controls">
+            <button class="btn-audio" id="playPauseBtn" aria-label="Reproducir / Pausar">
+              <svg id="playIcon" viewBox="0 0 24 24" width="20" height="20"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
+              <svg id="pauseIcon" viewBox="0 0 24 24" width="20" height="20" style="display:none"><rect x="5" y="3" width="4" height="18" fill="currentColor"/><rect x="15" y="3" width="4" height="18" fill="currentColor"/></svg>
+            </button>
+            <div class="progress-wrap" id="progressWrap">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <span class="audio-time" id="audioTime">0:00</span>
+          </div>
+          <audio id="mainAudio" src="assets/audio/presentacion.m4a" preload="metadata"></audio>
+        </div>
+
+        <div class="hero-cta">
+          <a href="academico.html" class="btn-primary">Ver Académico</a>
+          <a href="proyectos.html" class="btn-outline">Ver Proyectos</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-frame">
+          <div class="avatar-glow"></div>
+          <div class="avatar-img-wrap">
+
+            <img src="assets/images/foto.jpg" alt="Mauricio Varela" class="avatar-img" onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex'" />
+            <div class="avatar-fallback" id="avatarFallback">
+              <span>FOTO</span>
+            </div>
+          </div>
+          <div class="avatar-slash"></div>
+          <div class="scan-line"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PERFIL -->
+  <section class="section-perfil">
+    <div class="section-header">
+      <span class="chapter-num">CAPÍTULO 01</span>
+      <h2 class="section-title">Perfil <span class="accent">Profesional</span></h2>
+    </div>
+    <div class="perfil-grid">
+      <div class="perfil-card">
+        <div class="card-mark">&#x25A0;</div>
+        <p class="perfil-text">
+          Soy estudiante de Ingeniería de Software, apasionado por la tecnología, el desarrollo de software y la innovación digital. Me destaco por ser una persona responsable, disciplinada y comprometida con el aprendizaje continuo.
+        </p>
+        <p class="perfil-text">
+          Tengo conocimientos en programación en distintos lenguajes, arquitectura de software, bases de datos y desarrollo web. Además, tengo un gran interés en especializarme en áreas como <strong class="accent">Inteligencia Artificial</strong>, <strong class="accent">Big Data</strong> y <strong class="accent">desarrollo Full Stack</strong>.
+        </p>
+      </div>
+      <div class="perfil-card objetivo">
+        <div class="card-mark accent">&#x25A0;</div>
+        <h3 class="card-title">Objetivo Profesional</h3>
+        <p class="perfil-text">
+          Convertirme en un ingeniero de software altamente capacitado, especializado en IA, Big Data y desarrollo Full Stack. Busco participar en proyectos innovadores que aporten soluciones tecnológicas eficientes y de impacto.
+        </p>
+        <div class="obj-tags">
+          <span class="tag">IA</span>
+          <span class="tag">Big Data</span>
+          <span class="tag">Full Stack</span>
+          <span class="tag">Innovación</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS RÁPIDO -->
+  <section class="section-skills-home">
+    <div class="skills-strip">
+      <span>Java</span><span class="dot">◆</span>
+      <span>Python</span><span class="dot">◆</span>
+      <span>C#</span><span class="dot">◆</span>
+      <span>SQL</span><span class="dot">◆</span>
+      <span>JavaScript</span><span class="dot">◆</span>
+      <span>Git</span><span class="dot">◆</span>
+      <span>MySQL</span><span class="dot">◆</span>
+      <span>HTML5</span><span class="dot">◆</span>
+      <span>CSS3</span><span class="dot">◆</span>
+      <span>Pygame</span><span class="dot">◆</span>
+      <span>Java</span><span class="dot">◆</span>
+      <span>Python</span><span class="dot">◆</span>
+      <span>C#</span><span class="dot">◆</span>
+      <span>SQL</span><span class="dot">◆</span>
+      <span>JavaScript</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Mauricio Esteban Varela Cañón — Bogotá, Colombia</p>
+    <p class="footer-sub">Ingeniería de Software · UMB</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
